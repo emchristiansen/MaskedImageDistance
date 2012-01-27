@@ -1,0 +1,6 @@
+Different notions of distance between two masked (presumable face) images, with implementations.
+
+Demo:
+
+1) cd to src
+2) > ./rectangle_MSE_distance.py ../data/001_01_01_010_00_contour_masked.png ../data/001_01_01_010_00_contour.png ../data/002_01_01_010_00_contour_masked.png ../data/002_01_01_010_00_contour.png
