@@ -1,5 +1,13 @@
 Different notions of distance between two masked (presumably face) images, with implementations.
 
+Currently implemented:
+1) Rectangle MSE distance:
+  1) Find the minimum bounding rectangle of each masked image.
+  2) Warp one rectangle into the other.
+  3) Texture error: Corresponding pixels in the foreground of each mask contribute an error proportional to squared pixel distance.
+  4) Shape error: Pixels in one foreground but not in the other contribute a fixed mask mismatch error.
+  5) Error is normalized by rectangle size.
+
 Demo:
 
 1) cd to src
